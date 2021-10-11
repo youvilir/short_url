@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+Options -Indexes
+php_flag register_globals off
+RewriteEngine on
+
+RewriteRule ^-(.*) /url/redirect.php?key=$1 [R]
